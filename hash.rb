@@ -14,3 +14,5 @@ grades.each do|name,grade|
 end
 
 puts "The following are A #{grades.select{|key, val| val > 90}}";
+first = grades.find{|key, val| val > 80};
+puts "The first item with a value greater than 80 is #{first}";
